@@ -1,0 +1,14 @@
+{
+  "name": "Hacker News Comment Toggle",
+  "description":"Collapse Hacker News comments under their parents",
+  "version": "1.0",
+  "content_scripts": [{
+    "matches": ["https://news.ycombinator.com/item*"],
+    "js": ["toggle.js"],
+    "run_at": "document_start"
+}],
+"permissions": [
+    "tabs", "https://news.ycombinator.com/item*"
+],
+  "manifest_version": 2
+}
